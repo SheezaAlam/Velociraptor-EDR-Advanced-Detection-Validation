@@ -6,7 +6,7 @@ A deep-dive validation of Velociraptor as a full-fledged EDR: establishing a cle
 
 ---
 
-## 📋 Objective
+##  Objective
 
 This task demonstrated that Velociraptor EDR is highly effective at detecting attacker-like behaviors using **behavior-based detection** rather than relying on malware signatures. Through multiple safe simulations, Velociraptor consistently captured process execution, PowerShell abuse, persistence mechanisms, and reconnaissance activities.
 
@@ -14,7 +14,7 @@ The creation of reusable artifacts and hunts showed how detection engineering ca
 
 ---
 
-## 🖥️ Lab Environment
+## Lab Environment
 
 The lab consisted of one Velociraptor server hosted on the main machine and **four Windows virtual machines** acting as endpoints. All endpoints were successfully connected using the GUI console. System telemetry — process execution, PowerShell logs, file system activity, registry changes, and basic network behavior — was enabled to support detection and investigation. Snapshots were enabled to ensure safe rollback after simulations.
 
@@ -220,7 +220,7 @@ This indicates the Velociraptor deployment can scale effectively in a small ente
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 This task demonstrated that Velociraptor EDR is highly effective at detecting attacker-like behaviors using behavior-based detection rather than relying on malware signatures. Through multiple safe simulations, Velociraptor consistently captured process execution, PowerShell abuse, persistence mechanisms, and reconnaissance activities.
 
@@ -230,7 +230,7 @@ Overall, this project provided hands-on experience with real EDR concepts and va
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -288,14 +288,14 @@ Overall, this project provided hands-on experience with real EDR concepts and va
     └── hunt1-encoded-powershell-detection.png
 ```
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - [Velociraptor](https://docs.velociraptor.app/) — Server + Client (EDR platform)
 - VMware Workstation (4× Windows 10 endpoints)
 - PowerShell / Command Prompt
 - Windows Registry Editor (`regedit`), Task Scheduler, Service Control (`sc`)
 
-## 🔍 Artifacts & Techniques Referenced
+##  Artifacts & Techniques Referenced
 
 **Artifacts:** `Windows.System.Cmdshell`, `Windows.System.Pslist`, `Windows.System.TaskScheduler`, `Windows.System.Services`, `Windows.System.PowerShell`, `Windows.EventLogs.PowershellModule`, `Windows.EventLogs.PowershellScriptblock`, `Windows.Search.FileFinder`, `Windows.Network.Netstat`
 
